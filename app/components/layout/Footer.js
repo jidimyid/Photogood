@@ -1,65 +1,103 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGoogle, faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 export const Footer = () => {
   return <main>
-      <footer
-        class="text-center text-lg-start text-black bg-body-tertiary">
-        <div class="container p-4 pb-0">
-          <section class="">
-            <div class="row">
-              <div class="footer__kolom-satu col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">
-                  <b>Media</b>
-                </h6>
-                <p><a>Gif</a></p>
-                <p><a>Foto</a></p>
-                <p><a>Vektor</a></p>
-              </div>
+    <footer class="text-center text-black" style={{ backgroundColor: '#F5F5F5' }}>
+      {/* <!-- Grid container --> */}
+      {/* <!-- Section: Links --> */}
+      <section class="mt-5">
+        {/* <!-- Grid row--> */}
+        <div class="row text-center d-flex justify-content-center pt-5">
+          {/* <!-- Grid column --> */}
+          <div class="col-md-2">
+            <h6 class="text-uppercase fw-bold">
+              <a href="#!" class="text-black">Beranda</a>
+            </h6>
+          </div>
+          {/* <!-- Grid column --> */}
 
-              <hr class="w-100 clearfix d-md-none" />
+          {/* <!-- Grid column --> */}
+          <div class="col-md-2">
+            <h6 class="text-uppercase fw-bold">
+              <a href="#!" class="text-black">Jelajah</a>
+            </h6>
+          </div>
+          {/* <!-- Grid column --> */}
 
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold"><b>Lebih Banyak</b></h6>
-                <p>
-                  <a class="text-black">Pencarian Populer</a>
-                </p>
-                <p>
-                  <a class="text-black">Rekomendasi Kreator</a>
-                </p>
-                <p>
-                  <a class="text-black">Gambar Populer</a>
-                </p>
-                <p>
-                  <a class="text-black">Pilihan Editor</a>
-                </p>
-                <p>
-                  <a class="text-black">Gabung</a>
-                </p>
-              </div>
-              <hr class="w-100 clearfix d-md-none" />
+          {/* <!-- Grid column --> */}
+          <div class="col-md-2">
+            <h6 class="text-uppercase fw-bold">
+              <a href="#!" class="text-black">Upload</a>
+            </h6>
+          </div>
+          {/* <!-- Grid column --> */}
 
-              <hr class="w-100 clearfix d-md-none" />
+          {/* <!-- Grid column --> */}
+          <div class="col-md-2">
+            <h6 class="text-uppercase fw-bold">
+              <a href="#!" class="text-black">FAQ</a>
+            </h6>
+          </div>
+          {/* <!-- Grid column --> */}
 
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold"><b>Tentang</b></h6>
-                <p><i class="fas fa-home mr-3"></i>Tentang Kami</p>
-                <p><i class="fas fa-envelope mr-3"></i>FAQ</p>
-                <p><i class="fas fa-phone mr-3"></i>Privasi</p>
-                <p><i class="fas fa-print mr-3"></i>Kebijakan</p>
-                <p><i class="fas fa-print mr-3"></i>Lisensi</p>
-              </div>
-
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold"><b>Hubungi Kami Melalui</b></h6>
-              </div>
-            </div>
-          </section>
+          {/* <!-- Grid column --> */}
+          <div class="col-md-2">
+            <h6 class="text-uppercase fw-bold">
+              <a href="#!" class="text-black">Kontak</a>
+            </h6>
+          </div>
+          {/* <!-- Grid column --> */}
         </div>
+        {/* <!-- Grid row--> */}
+      </section>
+      {/* <!-- Section: Links --> */}
 
-        <div class="text-center p-3">
-          © 2020 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/">PHOTOGOOD</a>
+      <hr class="my-5" />
+
+      {/* <!-- Section: Text --> */}
+      <section class="mb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <p>
+              Photogood adalah hasil karya kelompok siswa yang ingin
+              menyelesaikan tugas akhir agar lulus. Jadi website ini
+              kami buat dengan pertimbangan guru pengajar kami.
+            </p>
+          </div>
         </div>
-      </footer>
+      </section>
+      {/* <!-- Section: Text --> */}
+
+      {/* <!-- Section: Social --> */}
+      <section class="text-center mb-5">
+        <a href="" class="text-black me-4">
+          <FontAwesomeIcon icon={faFacebookF} className="icon-size" />
+        </a>
+        <a href="" class="text-black me-4">
+          <FontAwesomeIcon icon={faTwitter} className="icon-size" />
+        </a>
+        <a href="" class="text-black me-4">
+          <FontAwesomeIcon icon={faGoogle} className="icon-size" />          </a>
+        <a href="" class="text-black me-4">
+          <FontAwesomeIcon icon={faInstagram} className="icon-size" />          </a>
+      </section>
+      {/* <!-- Section: Social --> */}
+      {/* <!-- Grid container --> */}
+
+      {/* <!-- Copyright --> */}
+      <div
+        class="text-center p-3"
+        style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
+      >
+        © 2024 Copyright:
+        <a class="text-black" href="https://mdbootstrap.com/"
+        >Photogood</a
+        >
+      </div>
+      {/* <!-- Copyright --> */}
+    </footer>
+    {/* <!-- Footer --> */}
   </main>
 };

@@ -3,6 +3,10 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { UserLayout } from "../components/layout/UserLayout/page";
+import { Navbar } from "../components/layout/Navbar";
+import { Footer } from "../components/layout/Footer";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGoogle, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 export default function Home() {
   return (

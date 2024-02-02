@@ -18,7 +18,7 @@ export default function Home() {
           
           <div className="upload__wrapper">
             <div class="container">
-              <div class="upload__upload-container">
+              <div class="upload__upload-container" style={{marginTop: '20px'}}>
                 <div class="upload__border-container">
                   <div className="upload__icon-container">
                     <Image className="upload__icon-upload" src={icon}></Image>
@@ -38,7 +38,7 @@ export default function Home() {
                 <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Deskripsi anda" rows="3"></textarea>
               </div>
               <div class="mt-3">
-              <button class="upload__upload-button">Unggah</button>
+              <button class="upload__upload-button" style={{marginTop: '20px'}}>Unggah</button>
               </div>
               </div>
             </div>

@@ -1,116 +1,117 @@
-.home {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: auto;
+}
 
-  /* Example sass implementation*/
-  /* 
-    By using &, you can easily create nested selectors 
-    without having to rewrite the name of the parent selector.
-    The result of the code below is home__example, home is from .home 
-    */
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: url('../../app/assets/images/hero-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  &__header {
-    height: 500px;
-  }
+.hero-image::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+}
 
-  &__gambar-carousel {
-    z-index: 1;
-  }
+.hero-content {
+  position: relative;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+}
 
-  &__heading {
-    position: absolute;
-    top: 26%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    z-index: 2;
-  }
+.ini-button {
+  width: 170px;
+  height: 50px;
+  margin-top: 40px;
+  border-radius: 50px;
+  outline: none;
+  font-size: 15px;
+  text-transform: capitalize;
+  background-color: #0D73D3;
+  color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all ease .2s;
+}
 
-  &__search-bar {
-    z-index: 2;
-  }
+.ini-button:hover {
+  border-color: #fff;
+  color: #fff;
+  background: transparent;
+}
 
-  &__gambar-homepage {
-    max-height: 450px;
-  }
+.container-button {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-  &__heading-main {
-    position: absolute;
-    font-weight: 400;
-    letter-spacing: 3px;
-    text-align: center;
-  }
-
-  &__heading-sub {
-    position: absolute;
-    display: block;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: center;
-  }
-
-  &__container-button {
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin: 10px;
-  }
-
-  &__kategori-button {
-    position: absolute;
-    display: flex;
-    left: 40%;
-    top: 70%;
-  }
-
-  &__tiga-button {
-    background-color: #0B60B0;
-    border-radius: 25px;
-    padding: 6.5px 20px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-
-    &:hover {
-      background-color: #94bce2;
-      color: white;
-      transform: scale(1.1);
-      transition: all 0.5s;
-    }
-  }
-
-  &__untuk-icon {
-    height: 24px;
-    width: 24px;
-  }
-
+.button-telu {
+  width: auto;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  border-radius: 50px;
+  border: 1px #000;
+  outline: none;
+  font-size: 15px;
+  text-transform: capitalize;
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #000;
+  cursor: pointer;
+  transition: all ease .2s;
   
-  &__overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  &__caption {
-    font-size: 2rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+}
+.button-telu:hover {
+  border-color: #fff;
+  color: #fff;
+  background: #0D73D3;
+}
 
-  &__thumbnail:hover .overlay {
-    opacity: 1;
-  }
-  &__container-gambar {
-    display: block;
-    width: 100%;
-  }
 
+.container-gambar {
+  width: 1400px;
+  margin: 20px auto;
+  columns: 4;
+  column-gap: 40px;
+}
+
+.container-gambar .box {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container-gambar .box .image {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.icon-size {
+  font-size: 30px;
 }
 
 .upload {
@@ -357,11 +358,13 @@
       height: 160px;
       object-fit: cover;
     }
+
     &__judul-subs {
       margin-top: 20px;
       position: relative;
       transform: translateX(40%);
     }
+
     &__box {
       position: relative;
       overflow: hidden;
@@ -369,10 +372,15 @@
       background: #f6f6;
       border-radius: 5px;
       border: 1px solid #e5e5e5;
-      box-shadow: 0 1px 5px rgba(156,156,156,0.6);
+      box-shadow: 0 1px 5px rgba(156, 156, 156, 0.6);
     }
+
     &__text-member {
       color: #ED7E11;
     }
   }
+}
+
+.image-detail {
+  size-adjust: 100px;
 }

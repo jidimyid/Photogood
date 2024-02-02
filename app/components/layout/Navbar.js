@@ -1,5 +1,5 @@
 import React from "react";
-import sutek from "../../assets/images/logo.png";
+import sutek from "../../assets/icon/logo-pg.png";
 import Image from "next/image";
 import "@/styles/globals.scss";
 import icon from "../../assets/icon/upload.png"
@@ -11,7 +11,7 @@ export const Navbar = () => {
       <div className="navbar__box-logo">
         <Image className="navbar__pglogo" href="./homepage" src={sutek} alt='logo photogood' ></Image>
       <nav class="navbar navbar-expand-lg bg-body-emphasis position-absolute top-50 end-0">
-        <div class="container-fluid">
+        <div class="container">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
