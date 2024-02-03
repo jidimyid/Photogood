@@ -84,8 +84,9 @@
   border: 2px solid #000;
   cursor: pointer;
   transition: all ease .2s;
-  
+
 }
+
 .button-telu:hover {
   border-color: #fff;
   color: #fff;
@@ -97,12 +98,12 @@
   width: 1400px;
   margin: 20px auto;
   columns: 4;
-  column-gap: 40px;
+  column-gap: 20px;
 }
 
 .container-gambar .box {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .container-gambar .box .image {
@@ -381,6 +382,106 @@
   }
 }
 
+.image-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+}
+
 .image-detail {
-  size-adjust: 100px;
+  position: relative;
+  max-width: 1000px;
+  max-height: 750px;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 50px;
+  box-shadow: rgba(0, 0, 0, .8);
+}
+
+.container-judul-gambar {
+  margin-top: 20px;
+  // margin-bottom: 10px;
+}
+.judul-gambar-detail {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.content {
+  border: 2px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin-right: 10px;
+}
+.content .heart {
+  font-size: 20px;
+}
+.heart:hover {
+  color: red;
+}
+.like {
+  margin-left: 10px;
+}
+.simpan {
+  margin-left: 10px;
+}
+.bagikan {
+  margin-left: 10px;
+}
+.unduh {
+  margin-left: 10px;
+}
+.text-detail-kiri {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.text-detail-kanan {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.foto-profil {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.foto-profil .image-foto-profil {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.text-card-detail {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.text-card-detail-bawah {
+  font-size: 15px;
+  color: grey;
+  margin-top: 5px;
+}
+.container-member {
+  border: 1px solid;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.gifIcon {
+  width: 40px;
+  height: auto;
+}
+.text-gelar {
+  margin-left: 10px;
 }
