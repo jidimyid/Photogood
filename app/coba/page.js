@@ -16,84 +16,30 @@ export default function Home() {
     return (
         <>
             <Navbar />
-            <div class="container light-style flex-grow-1 container-p-y">
-
-                <h2 class="fw-bolder py-3 mb-2">
-                    Edit Profil
-                </h2>
-
-                <div class="card overflow-hidden">
-                    <div class="row no-gutters row-bordered row-border-light">
-                        <div class="col">
-                            <div class="tab-content">
-                                <div class="tab-pane fade active show" id="account-general">
-                                    <div class="card-body media align-items-center d-flex">
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="d-block ui-w-80 rounded-circle" />
-                                        <div class="media-body ml-4">
-                                            <label class="btn btn-outline-primary mx-3">
-                                                <MdAddPhotoAlternate /> Unggah Foto Profil Baru
-                                                <input type="file" class="account-settings-fileinput" />
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <hr class="border-light m-0" />
-
-                                    <div class="card-body row">
-                                        <div className="row">
-                                            <div class="form-group col-2 d-flex flex-column">
-                                                <label className="form-label">Title</label>
-                                                <div class="input-group">
-                                                    <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
-                                                        <option selected>Pilih</option>
-                                                        <option value="1">Mr.</option>
-                                                        <option value="2">Mrs.</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group col">
-                                                <label class="form-label">Username</label>
-                                                <input type="text" class="form-control mb-1" placeholder="JIDIABD" />
-                                            </div>
-                                        </div>
-                                        <div className="row mt-4">
-                                            <div class="form-group">
-                                                <label class="form-label">Nama Lengkap</label>
-                                                <input type="text" class="form-control mb-1" placeholder="Arya Atmajaya" />
-                                            </div>
-                                        </div>
-                                        <div className="row mt-4">
-                                            <div class="form-group">
-                                                <label class="form-label">E-mail</label>
-                                                <input type="text" class="form-control mb-1" placeholder="mephistopeles4@gmail.com" />
-                                            </div>
-                                        </div>
-                                        <div className="row mt-4">
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlTextarea1" class="form-label">Alamat</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-                                            </div>
-                                        </div>
-                                        <div className="row mt-4">
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
+            <div className="row">
+                <h1>Berlangganan</h1>
+            </div>
+            <div className="row">
+                <div className="col-5 bg-secondary">
+                    <div className="card w-100">
+                        <div className="card-body">
+                            <div className="row border-bottom text-center mx-2">
+                                <div className="col-5 bg-primary"></div>
+                                <div className="col"><span className="text-th">Gratis</span></div>
+                                <div className="col"><span className="text-th">Member</span></div>
                             </div>
-                            <div class="text-right d-flex flex-row-reverse my-3 mx-5">
-                                <button type="button" class="btn btn-primary">Save changes</button>&nbsp;
-                                <button type="button" class="btn btn-default">Cancel</button>
+                            <div className="row mx-2">
+                                <div className="col-5">Maksimal download gambar</div>
+                                <div className="col text-center"><span>3</span></div>
+                                <div className="col text-center"><span>Tak terbatas</span></div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
+                <div className="col">
+                    <div className="row bg-info">row1</div>
+                    <div className="row bg-primary">row2</div>
+                </div>
             </div>
             <Footer />
         </>

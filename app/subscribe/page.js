@@ -12,37 +12,31 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="container">
-        <div className="subscribe__box">
-          <table className="table table-borderless rounded">
-            <thead>
-              <tr>
-                <th>1</th>
-                <th className="text-center">User</th>
-                <th className="text-center">
-                  <span className="subscribe__text-member">Member</span>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Download maksimal gambar</td>
-                <td className="text-center">3 Gambar</td>
-                <td className="text-center">Tidak Terbatas</td>
-              </tr>
-              <tr>
-                <td>Upload gambar maksimal</td>
-                <td className="text-center">3 Gambar</td>
-                <td className="text-center">Tidak Terbatas</td>
-              </tr>
-              <tr>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <h1>Contoh Git Subscribe</h1>
-      </div>
+      <div className="row">
+                <h1>Berlangganan</h1>
+            </div>
+            <div className="row">
+                <div className="col-5 bg-secondary">
+                    <div className="card w-100">
+                        <div className="card-body">
+                            <div className="row border-bottom text-center mx-2">
+                                <div className="col-5 bg-primary"></div>
+                                <div className="col"><span className="text-th">Gratis</span></div>
+                                <div className="col"><span className="text-th">Member</span></div>
+                            </div>
+                            <div className="row mx-2">
+                                <div className="col-5">Maksimal download gambar</div>
+                                <div className="col text-center"><span>3</span></div>
+                                <div className="col text-center"><span>Tak terbatas</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="row bg-info">row1</div>
+                    <div className="row bg-primary">row2</div>
+                </div>
+            </div>
       <Footer />
     </>
   );
