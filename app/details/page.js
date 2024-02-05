@@ -18,13 +18,13 @@ export default function Home() {
         <>
             <Navbar />
             <div className="row">
-                <div className="col-8 bg-primary">
+                <div className="col-8">
                     <div className="image-container">
                         <Image src={gambar1} className="image-detail img-fluid"></Image>
                     </div>
                 </div>
-                <div className="col bg-secondary">
-                    <div className="card justify-content-center" style={{marginTop: '20px'}}>
+                <div className="col" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                    <div className="card justify-content-center" style={{ marginTop: '20px', marginBottom: '20px' }}>
                         <div className="list-group list-group-flush">
                             <li className="list-group-item">
                                 <div className="container-judul-gambar">
@@ -35,7 +35,7 @@ export default function Home() {
                                 </div>
                             </li>
                             <li className="list-group-item">
-                                <div className="container-button">
+                                <div className="container-button" style={{ marginTop: '20px' }}>
                                     <div className="content">
                                         <span className="heart"><FaHeart /></span>
                                         <span className="like">Suka</span>
@@ -54,7 +54,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="container-detail mt-2">
-                                    <div className="row" style={{marginTop: '20px'}}>
+                                    <div className="row" style={{ marginTop: '20px' }}>
                                         <div className="col-8">
                                             <span className="text-detail-kiri">Download</span>
                                             <span className="text-detail-kiri">Suka</span>
@@ -74,12 +74,12 @@ export default function Home() {
                             </li>
                             <li className="list-group-item">
                                 <div className="container-profil-detail row">
-                                    <div className="col-2" style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-end'}}>
+                                    <div className="col-2" style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', marginTop: '20px', marginBottom: '20px' }}>
                                         <div className="foto-profil">
                                             <Image src={gambar3} alt="foto profil" className="image-foto-profil"></Image>
                                         </div>
                                     </div>
-                                    <div className="col" style={{alignItems: 'center'}}>
+                                    <div className="col" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                                         <div className="row">
                                             <span className="text-card-detail">JIDIABD</span>
                                         </div>
@@ -87,7 +87,7 @@ export default function Home() {
                                             <span className="text-card-detail-bawah">2 Postingan</span>
                                         </div>
                                     </div>
-                                    <div className="col" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                                    <div className="col" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                         <div className="container-member">
                                             <span className="icon-gelar"><Image src={gifIcon} className="gifIcon"></Image></span>
                                             <span className="text-gelar">Member</span>
@@ -98,7 +98,36 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="row bg-danger">
+                <div className="row">
+                    <div className="container-comment-detail col ">
+                        <div className="jumlah-comment">1 Komentar</div>
+                        <div className="container-comment">
+                            <div className="foto-profil-comment">
+                                <Image src={gambar4} alt="foto profil user" className="image-profil-comment"></Image>
+                            </div>
+
+                            <div className="text-area-comment">
+                                <textarea className="text-area" placeholder="Tuliskan komentar anda"></textarea>
+                            </div>
+                            <div class="button-container">
+                                <button class="send-button">Kirim</button>
+                            </div>
+                        </div>
+                        <div className="container-comment">
+                            <div className="foto-profil-comment">
+                                <Image src={gambar4} alt="foto profil user" className="image-profil-comment"></Image>
+                            </div>
+                            <div className="container-isi-comment" style={{display: 'flex', flexDirection: 'column', marginLeft: '10px'}}>
+                                <div className="username-text">
+                                    <span className="username-detail">JIDIABD</span>
+                                    <span className="tanggal-comment">22 Januari 2024</span>
+                                </div>
+                                <div className="isi-comment">
+                                    <span className="detail-isi-comment">Sangar awakmu cak!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

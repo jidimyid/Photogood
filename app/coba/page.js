@@ -17,91 +17,90 @@ export default function Home() {
     return (
         <>
             <Navbar />
-            <div className="row">
-                <div className="col-8 bg-primary">
-                    <div className="image-container">
-                        <Image src={gambar1} className="image-detail img-fluid"></Image>
-                    </div>
-                </div>
-                <div className="col bg-secondary">
-                    <div className="card justify-content-center" style={{marginTop: '20px'}}>
-                        <div className="list-group list-group-flush">
-                            <li className="list-group-item">
-                                <div className="container-judul-gambar">
-                                    <div className="judul-gambar-detail">Gambar 1</div>
+            <div class="container-xl px-4 mt-4">
+                {/* <!-- Account page navigation--> */}
+                <nav class="nav nav-borders">
+                    <a class="nav-link active ms-0" href="https://www.bootdey.com/snippets/view/bs5-edit-profile-account-details" target="__blank">Profile</a>
+                </nav>
+                <hr class="mt-0 mb-4"/>
+                    <div class="row">
+                        <div class="col-xl-4">
+                            {/* <!-- Profile picture card--> */}
+                            <div class="card mb-4 mb-xl-0">
+                                <div class="card-header">Foto Profil</div>
+                                <div class="card-body text-center">
+                                    {/* <!-- Profile picture image--> */}
+                                    <img class="img-account-profile rounded-circle mb-2" src="http://bootdey.com/img/Content/avatar/avatar1.png" alt=""/>
+                                        {/* <!-- Profile picture help block--> */}
+                                        <div class="small font-italic text-muted mb-4">JPG or PNG</div>
+                                        {/* <!-- Profile picture upload button--> */}
+                                        <button class="btn btn-primary" type="button">Unggah foto baru</button>
                                 </div>
-                                <div className="container-deskripsi-gambar">
-                                    <div className="deskripsi-gambar-detail">Gambar ini adalah gambar pertama yang saya download untuk dimasukkan kedalam assets</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-8">
+                            {/* <!-- Account details card--> */}
+                            <div class="card mb-4">
+                                <div class="card-header">Rincian Akun</div>
+                                <div class="card-body">
+                                    <form>
+                                        {/* <!-- Form Group (username)--> */}
+                                        <div class="mb-3">
+                                            <label class="small mb-1" for="inputUsername">Username (how your name will appear to other users on the site)</label>
+                                            <input class="form-control" id="inputUsername" type="text" placeholder="Enter your username" value="username"/>
+                                        </div>
+                                        {/* <!-- Form Row--> */}
+                                        <div class="row gx-3 mb-3">
+                                            {/* <!-- Form Group (first name)--> */}
+                                            <div class="col-md-6">
+                                                <label class="small mb-1" for="inputFirstName">First name</label>
+                                                <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="Valerie"/>
+                                            </div>
+                                            {/* <!-- Form Group (last name)--> */}
+                                            <div class="col-md-6">
+                                                <label class="small mb-1" for="inputLastName">Last name</label>
+                                                <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" value="Luna"/>
+                                            </div>
+                                        </div>
+                                        {/* <!-- Form Row        --> */}
+                                        <div class="row gx-3 mb-3">
+                                            {/* <!-- Form Group (organization name)--> */}
+                                            <div class="col-md-6">
+                                                <label class="small mb-1" for="inputOrgName">Organization name</label>
+                                                <input class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" value="Start Bootstrap"/>
+                                            </div>
+                                            {/* <!-- Form Group (location)--> */}
+                                            <div class="col-md-6">
+                                                <label class="small mb-1" for="inputLocation">Location</label>
+                                                <input class="form-control" id="inputLocation" type="text" placeholder="Enter your location" value="San Francisco, CA"/>
+                                            </div>
+                                        </div>
+                                        {/* <!-- Form Group (email address)--> */}
+                                        <div class="mb-3">
+                                            <label class="small mb-1" for="inputEmailAddress">Email address</label>
+                                            <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" value="name@example.com"/>
+                                        </div>
+                                        {/* <!-- Form Row--> */}
+                                        <div class="row gx-3 mb-3">
+                                            {/* <!-- Form Group (phone number)--> */}
+                                            <div class="col-md-6">
+                                                <label class="small mb-1" for="inputPhone">Phone number</label>
+                                                <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" value="555-123-4567"/>
+                                            </div>
+                                            {/* <!-- Form Group (birthday)--> */}
+                                            <div class="col-md-6">
+                                                <label class="small mb-1" for="inputBirthday">Birthday</label>
+                                                <input class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="Enter your birthday" value="06/10/1988"/>
+                                            </div>
+                                        </div>
+                                        {/* <!-- Save changes button--> */}
+                                        <button class="btn btn-primary" type="button">Simpan </button>
+                                    </form>
                                 </div>
-                            </li>
-                            <li className="list-group-item">
-                                <div className="container-button">
-                                    <div className="content">
-                                        <span className="heart"><FaHeart /></span>
-                                        <span className="like">Suka</span>
-                                    </div>
-                                    <div className="content">
-                                        <span className="bookmark"><FaBookmark /></span>
-                                        <span className="simpan">Simpan</span>
-                                    </div>
-                                    <div className="content">
-                                        <span className="share"><FaShareNodes /></span>
-                                        <span className="bagikan">Bagikan</span>
-                                    </div>
-                                    <div className="content">
-                                        <span className="download"><MdFileDownload /></span>
-                                        <span className="unduh">Unduh</span>
-                                    </div>
-                                </div>
-                                <div className="container-detail mt-2">
-                                    <div className="row" style={{marginTop: '20px'}}>
-                                        <div className="col-8">
-                                            <span className="text-detail-kiri">Download</span>
-                                            <span className="text-detail-kiri">Suka</span>
-                                            <span className="text-detail-kiri">Komentar</span>
-                                            <span className="text-detail-kiri">Tipe Media</span>
-                                            <span className="text-detail-kiri">Tanggal Publikasi</span>
-                                        </div>
-                                        <div className="col">
-                                            <span className="text-detail-kanan">876</span>
-                                            <span className="text-detail-kanan">122</span>
-                                            <span className="text-detail-kanan">1</span>
-                                            <span className="text-detail-kanan">JPEG</span>
-                                            <span className="text-detail-kanan">21 Januari 2024</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li className="list-group-item">
-                                <div className="container-profil-detail row">
-                                    <div className="col-2" style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-end'}}>
-                                        <div className="foto-profil">
-                                            <Image src={gambar3} alt="foto profil" className="image-foto-profil"></Image>
-                                        </div>
-                                    </div>
-                                    <div className="col" style={{alignItems: 'center'}}>
-                                        <div className="row">
-                                            <span className="text-card-detail">JIDIABD</span>
-                                        </div>
-                                        <div className="row">
-                                            <span className="text-card-detail-bawah">2 Postingan</span>
-                                        </div>
-                                    </div>
-                                    <div className="col" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                                        <div className="container-member">
-                                            <span className="icon-gelar"><Image src={gifIcon} className="gifIcon"></Image></span>
-                                            <span className="text-gelar">Member</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="row bg-danger">
-                </div>
             </div>
-
             <Footer />
         </>
     );
