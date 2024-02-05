@@ -2,20 +2,65 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import bernard from "../assets/images/bear-8364583_1280.png";
 import { UserLayout } from "../components/layout/UserLayout/page";
-import { Navbar } from "../components/layout/Navbar";
-import { Footer } from "../components/layout/Footer";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGoogle, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import "./profile.css";
 
 export default function Home() {
   return (
     <>
       <UserLayout>
-        <Link href="/profile/tes-sub-routes">
-          <span>Go to tes sub routes Page</span>
-          <button className="btn btn-primary m-2">Button</button>
-        </Link>
+        <div className="column-profile">
+          <div>
+            <Image className="gambar-profile" src={bernard} />
+          </div>
+          <div><h1> Bernard WIjaya</h1></div>
+          <div><h6> 1000 video skandal</h6></div>
+          <div>
+            <button class="profile-btn" type="submit">
+              Edit Profile
+            </button>
+          </div>
+          <div className="row-btn">
+            <div className="row-btn-prof">
+              <button class="profile-btn" type="submit">
+                Postingan Anda
+              </button>
+            </div>
+            <div className="row-btn-prof">
+              <button class="profile-btn" type="submit">
+                Disimpan
+              </button>
+            </div>
+          </div>
+          <div className="img-row">
+            <div className="img-daftar">
+            <Image className="img-post" src={bernard} />
+            <h4>Luar biasa</h4>
+            23 Skandal <i>1 hari yang lalu</i>
+            </div>
+            <div className="img-daftar">
+            <Image className="img-post" src={bernard} />
+            <h4>Luar biasa</h4>
+            23 Skandal <i>1 hari yang lalu</i>
+            </div>
+            <div className="img-daftar">
+            <Image className="img-post" src={bernard} />
+            <h4>Luar biasa</h4>
+            23 Skandal <i>1 hari yang lalu</i>
+            </div>
+            <div className="img-daftar">
+            <Image className="img-post" src={bernard} />
+            <h4>Luar biasa</h4>
+            23 Skandal <i>1 hari yang lalu</i>
+            </div>
+            <div className="img-daftar">
+            <Image className="img-post" src={bernard} />
+            <h4>Luar biasa</h4>
+            23 Skandal <i>1 hari yang lalu</i>
+            </div>
+          </div>
+        </div>
       </UserLayout>
     </>
   );
