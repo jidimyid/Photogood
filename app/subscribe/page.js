@@ -41,6 +41,7 @@ export default function Home() {
             </tbody>
           </table>
         </div>
+        <h1>Contoh Git Subscribe</h1>
       </div>
       <Footer />
     </>
