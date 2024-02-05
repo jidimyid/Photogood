@@ -57,7 +57,12 @@ export default function Home() {
             <div className="img-daftar">
             <Image className="img-post" src={bernard} />
             <h4>Luar biasa</h4>
-            23 Skandal <i>1 hari yang laluss</i>
+            23 Skandal <i>1 hari yang lalu</i>
+            </div>
+            <div className="img-daftar">
+            <Image className="img-post" src={bernard} />
+            <h4>Luar biasa</h4>
+            23 Skandal <i>1 hari yang lalu</i>
             </div>
           </div>
         </div>
