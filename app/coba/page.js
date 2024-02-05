@@ -101,6 +101,7 @@ export default function Home() {
                         </div>
                     </div>
             </div>
+            <h1>Nyontohi Sutek</h1>
             <Footer />
         </>
     );
