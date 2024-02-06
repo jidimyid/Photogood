@@ -24,7 +24,7 @@ export default function Home() {
                     <div className="card w-100">
                         <div className="card-body">
                             <div className="row border-bottom text-center mx-2">
-                                <div className="col-5 bg-primary"></div>
+                                <div className="col-5 "></div>
                                 <div className="col"><span className="text-th">Gratis</span></div>
                                 <div className="col"><span className="text-th">Member</span></div>
                             </div>

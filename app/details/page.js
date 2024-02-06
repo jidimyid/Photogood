@@ -18,7 +18,7 @@ export default function Home() {
         <>
             <Navbar />
             <div className="row">
-                <div className="col-8">
+                <div className="col-6" style={{marginLeft: '150px', marginRight: '150px'}}>
                     <div className="image-container">
                         <Image src={gambar1} className="image-detail img-fluid"></Image>
                     </div>
@@ -76,7 +76,7 @@ export default function Home() {
                                 <div className="container-profil-detail row">
                                     <div className="col-2" style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', marginTop: '20px', marginBottom: '20px' }}>
                                         <div className="foto-profil">
-                                            <Image src={gambar3} alt="foto profil" className="image-foto-profil"></Image>
+                                            <Image src={gambar3} alt="foto profil" className="image-foto-profil image-fluid"></Image>
                                         </div>
                                     </div>
                                     <div className="col" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
@@ -98,6 +98,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+                <div className="col"></div>
                 <div className="row">
                     <div className="container-comment-detail col ">
                         <div className="jumlah-comment">1 Komentar</div>
