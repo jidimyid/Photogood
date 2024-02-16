@@ -19,9 +19,6 @@ export default function Home() {
         <>
             <Navbar />
             <div className="row">
-                <Image src={gambar1} className="gambar-subs"></Image>
-            </div>
-            <div className="row">
                 <h1 className="judul-subs">Berlangganan</h1>
             </div>
             <div className="container">
@@ -59,7 +56,7 @@ export default function Home() {
                     </div>
                     <div className="col">
                         <div className="container">
-                            <div className="row bg-info" style={{ marginBottom: '10px' }}>
+                            <div className="row">
                                 <div className="card">
                                     <div className="card-title my-3 mx-3">Penawaran Terbaik</div>
                                     <div className="card-body">
@@ -88,7 +85,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="container">
-                            <div className="row" style={{ marginTop: '10px' }}>
+                            <div className="row">
                                 <div className="card">
                                     <div className="card-body">
                                         <div className="row">

@@ -23,7 +23,7 @@ export default function Home() {
                         <Image src={gambar1} className="image-detail img-fluid"></Image>
                     </div>
                 </div>
-                <div className="col" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                <div className="col container" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                     <div className="card justify-content-center" style={{ marginTop: '20px', marginBottom: '20px' }}>
                         <div className="list-group list-group-flush">
                             <li className="list-group-item">
@@ -98,8 +98,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="col"></div>
-                <div className="row">
+                <div className="row container">
                     <div className="container-comment-detail col ">
                         <div className="jumlah-comment">1 Komentar</div>
                         <div className="container-comment">

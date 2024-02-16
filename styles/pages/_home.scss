@@ -5,116 +5,6 @@
   height: auto;
 }
 
-.hero-image {
-  position: relative;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  background: url('../../app/assets/images/hero-image.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.hero-image::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, .5);
-}
-
-.hero-content {
-  position: relative;
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0 auto;
-}
-
-.ini-button {
-  width: 170px;
-  height: 50px;
-  margin-top: 40px;
-  border-radius: 50px;
-  outline: none;
-  font-size: 15px;
-  text-transform: capitalize;
-  background-color: #0D73D3;
-  color: #fff;
-  box-shadow: 0 0 30px rgba(0, 0, 0, .3);
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: all ease .2s;
-}
-
-.ini-button:hover {
-  border-color: #fff;
-  color: #fff;
-  background: transparent;
-}
-
-.container-button {
-  margin: 10px auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.button-telu {
-  width: auto;
-  height: 50px;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  margin-right: 15px;
-  border-radius: 50px;
-  border: 1px #000;
-  outline: none;
-  font-size: 15px;
-  text-transform: capitalize;
-  background-color: transparent;
-  color: #000;
-  border: 2px solid #000;
-  cursor: pointer;
-  transition: all ease .2s;
-
-}
-
-.button-telu:hover {
-  border-color: #fff;
-  color: #fff;
-  background: #0D73D3;
-}
-
-
-.container-gambar {
-  width: 1400px;
-  margin: 20px auto;
-  columns: 4;
-  column-gap: 20px;
-}
-
-.container-gambar .box {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.container-gambar .box .image {
-  max-width: 100%;
-  border-radius: 15px;
-}
-
-.icon-size {
-  font-size: 30px;
-}
-
 .upload {
 
   &__judul-upload {
@@ -202,182 +92,6 @@
 
     &:hover {
       background-color: #0D73D3;
-    }
-  }
-}
-
-.detail {
-  &__container-detail {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 50px;
-  }
-
-  &__gambar {
-    position: relative;
-    max-width: 1000px;
-    max-height: 500px;
-    width: auto;
-    height: auto;
-    border-radius: 5px;
-    margin-right: 50px;
-  }
-
-  &__btn-download {
-    background-color: #0B60B0;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    width: 275px;
-    height: 30px;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__btn-download:hover {
-    background-color: #2A83C9;
-    transform: scale(1.1);
-    transition: all 0.5s;
-  }
-
-  @media (max-width: 576px) {
-    &__btn-download {
-      width: 120px;
-      height: 20px;
-    }
-  }
-
-  @media (max-width: 320px) {
-    &__btn-download {
-      width: 80px;
-      height: 15px;
-    }
-  }
-
-  &__button-unduh {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__button-grup {
-    padding: 20px;
-    margin: 10px;
-  }
-
-  &__like-button {
-    padding: 10px;
-    margin: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #0B60B0;
-    color: #fff;
-    border: none;
-    width: 75px;
-    border-radius: 20px;
-    /* Border radius for rounded corners */
-    transition: background-color 0.3s ease;
-  }
-
-  &__like-button:hover {
-    background-color: #3498db;
-    /* Hover color */
-  }
-
-  &__like-button.liked {
-    background-color: #e74c3c;
-  }
-
-  &__bagikan-button {
-    padding: 10px;
-    margin: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #0B60B0;
-    color: #fff;
-    border: none;
-    width: 100px;
-    border-radius: 20px;
-    /* Border radius for rounded corners */
-    transition: background-color 0.3s ease;
-  }
-
-  &__bagikan-button:hover {
-    background-color: #3498db;
-    /* Hover color */
-  }
-
-  &__bagikan-button.liked {
-    background-color: #e74c3c;
-  }
-
-  &__simpan-button {
-    padding: 10px;
-    margin: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #0B60B0;
-    color: #fff;
-    border: none;
-    width: 100px;
-    border-radius: 20px;
-    /* Border radius for rounded corners */
-    transition: background-color 0.3s ease;
-  }
-
-  &__simpan-button:hover {
-    background-color: #3498db;
-    /* Hover color */
-  }
-
-  &__simpan-button.liked {
-    background-color: #e74c3c;
-  }
-
-
-  &__rincian {
-    position: absolute;
-  }
-
-  &__row-rinci {
-    display: flex;
-    line-height: 24px;
-    gap: 8px;
-    justify-content: space-between;
-  }
-
-  .subscribe {
-    &__gambar-awal {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-    }
-
-    &__judul-subs {
-      margin-top: 20px;
-      position: relative;
-      transform: translateX(40%);
-    }
-
-    &__box {
-      position: relative;
-      overflow: hidden;
-      padding: 20px;
-      background: #f6f6;
-      border-radius: 5px;
-      border: 1px solid #e5e5e5;
-      box-shadow: 0 1px 5px rgba(156, 156, 156, 0.6);
-    }
-
-    &__text-member {
-      color: #ED7E11;
     }
   }
 }
@@ -681,32 +395,32 @@ label.btn {
   height: 85px;
   border-radius: 50%;
 }
+
 .icon-detail-subs {
   display: flex;
   justify-content: center;
   margin-top: 18px;
   font-size: 45px;
 }
+
 .iki-icon-telu {
   color: #1878ED;
 }
+
 .atas-subs {
   font-size: 20px;
   font-weight: 900;
 }
+
 .bawah-subs {
   text-align: center;
   font-size: 16px;
 }
+
 .text-subs-detail {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.gambar-subs {
-  height: 100px;
-  object-fit: cover;
-  margin-bottom: 30px;
 }
 
 .judul-subs {
@@ -715,6 +429,7 @@ label.btn {
   justify-content: center;
   margin-bottom: 30px;
 }
+
 .sub-judul-subs {
   font-weight: bold;
   display: flex;
