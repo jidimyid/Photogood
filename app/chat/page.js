@@ -23,7 +23,7 @@ export default function Home() {
                                 </div>
                                 <ul class="list-unstyled chat-list mt-2 mb-0">
                                     <li class="clearfix" style={{ display: 'flex', alignItems: 'center' }}>
-                                        <img src="https://lh3.googleusercontent.com/proxy/vOvuAW_REudUXCNIrja4nqVBqiuajn9C-m5WG7BtwtfG8oAHoMaVLR68GNDZAgNoHVplfLzOdmlYwcWIuMOCD_0GReBs_qUHirt7PFsB-Gw" alt="avatar" />
+                                        <img src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_128,ar_1:1/v1584086133/ovagrnkgfjwnonmuqvns.jpg" alt="avatar" />
                                         <div class="about">
                                             <div class="name">Photo Ilmu Padi</div>
                                         </div>
@@ -87,7 +87,7 @@ export default function Home() {
                                                 <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="avatar" />
                                                 <span class="message-data-time">10:10, Hari ini</span>
                                             </div>
-                                            <div class="message my-message">Angin itu tidak punya KTP</div>
+                                            <div class="message my-message">Tapi kita tidak melawan dengan kebencian</div>
                                         </li>
                                         <li class="clearfix">
                                             <div class="message-data" style={{ display: 'flex', flexDirection: 'row', marginLeft: '10px' }}>
